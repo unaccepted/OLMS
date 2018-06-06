@@ -1,0 +1,118 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	
+	<!--Welcome-page-->
+	<bean id="index"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/index.jsp" />
+	</bean>
+	<!-- Member Registration Entry Page -->
+	<bean id="memberRegistrationEntry"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/memberRegistrationEntry.jsp" />
+	</bean>
+	
+	<!-- Member Registration Confirmation Page -->
+	<bean id="memberRegistrationConf"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/memberRegistrationConf.jsp" />
+	</bean>
+
+	<bean id="bookCategoryEntry"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/bookCategory/bookCategoryEntry.jsp" />
+	</bean>
+	
+	<bean id="bookCategoryQuery"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/bookCategory/bookCategoryQuery.jsp" />
+	</bean>
+	
+	<bean id="bookCategoryConf"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/bookCategory/bookCategoryConf.jsp" />
+	</bean>
+		
+	 <bean id="issueResult"
+		class="org.springframework.web.servlet.view.JstlView">
+
+		<property name="url" value="/WEB-INF/views/issue/issueResult.jsp" />
+	 </bean>
+	
+     <bean id="issueQuery"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/issue/issueQuery.jsp" />
+	 </bean>
+	  <bean id="memberIssueQuery"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/memberIssueQuery/memberIssueQuery.jsp" />
+	 </bean>
+	 <bean id="memberIssueQueryResult"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/memberIssueQuery/memberIssueQueryResult.jsp" />
+	 </bean>
+	 
+	 <bean id="bookCategoryQueryResult"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/bookCategory/bookCategoryQueryResult.jsp" />
+	</bean>
+
+    <bean id="usersExistingUserQuery"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/users/usersExistingUserQuery.jsp" />
+	</bean>
+	<bean id="usersNewRegistrationQuery"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/users/usersNewRegistrationQuery.jsp" />
+	</bean>
+	<bean id="usersExistingUserQueryResult"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/users/usersExistingUserQueryResult.jsp" />
+	</bean>
+	<bean id="usersNewRegistrationQueryResult"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/users/usersNewRegistrationQueryResult.jsp" />
+	</bean>
+
+	<bean id="memberBookQuery"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/memberBookQuery/memberBookQuery.jsp" />
+	</bean>
+	<bean id="memberMenu"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/memberMenu.jsp" />
+	</bean>
+	<bean id="memberBookQueryResult"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/memberBookQuery/memberBookQueryResult.jsp" />
+	</bean>
+	<bean id="bookEntry"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/book/bookEntry.jsp" />
+	</bean>
+	
+	<bean id="bookQuery"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/book/bookQuery.jsp" />
+	</bean>
+	
+	<bean id="bookEntryConf"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/book/bookEntryConf.jsp" />
+	</bean>
+	<bean id="bookQueryResult"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/book/bookQueryResult.jsp" />
+	</bean>
+	 <bean id="returnBookQuery"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/returnBook/returnBookQuery.jsp" />
+	 </bean>
+	 <bean id="returnBookQueryResult"
+		class="org.springframework.web.servlet.view.JstlView">
+		<property name="url" value="/WEB-INF/views/returnBook/returnBookQueryResult.jsp" />
+	 </bean>
+	
+</beans>
